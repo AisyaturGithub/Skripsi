@@ -1,0 +1,110 @@
+1. Menampilkan kata calon tujuan koreksi di Jupiter notebook. Misalnya kata yang paling kecil berapa yang muncul
+2. koreksi nilai presisi 
+terdapat tahapan menghitung nilai koreksi dan searh enginnenya, Ketika hasil koreksinya benar, nantinya serach enginenya juga akan benar.
+3. pada hasil pencariannya hanya judulnya, Ketika ingin melihat hasilnya judulnya diklik
+kata modelling jadi evaluasi
+4. pembahasan di buku skripsi 
+5. menampilkan grafik
+
+
+NB : untuk yang koreksi ejaannnya di cek Kembali kata yang bener itu akurasi apa presisi
+pengujian system
+- ketepatan dar koreksi
+- presisi dari query lama
+- presisi dari query baru
+- ingin melihat hasilnya 
+
+IJSEIT ()
+
+- tujuannya dari penelitian ini yaitu kata yang ada dalam dataset - kata yang ada di dalam dataset
+- pengujiannya query bantuan pakar, kemudian nantinya hasil query 
+- query 1 querynya apa
+- presisi koreksi
+- presisi baru
+ jadi kolomnya ada query awal, query hasil koreksi, presisi koreksi, presisi retrieval awal, query retrieval koreksi (dibentuk dalam kolom) dan dibuatkan grafik garis (kenaikan presisi dari query yang dikoreksi).
+- hasil koreksi tepat/tidak
+- hasil pencrian, hanya 5 atau selalu 5
+- hasil koreksi itu nanti paling bagus cara menilainya yang bagus dengan cara apa 
+
+
+DATA SKRIPSI YANG DIGUNAKAN
+BAB 3 :pada bagian gambar IPO kurang menambahkan 
+BAB 1 : INTI DA
+[4/5 21.36] DP 2 Bapak Husni Husni: Pastikan... apa yang menjadi kata kunci di dalam JUDUL sudah disebutkan di dalam bab 1, kemudian dijelaskan teorinya di bab 2 (contoh sebagai bukti penguasaan taruh di excel...diluar buku skripsi), di bab 3 jelaskan detail gagasan anda, mulai dari arsitektur sistem sampai bagaimana menguji kesuksesan dari gagasan tersebut, dan bab 4 harus menjelaskan bagaimana gagasan tersebut diwujudkan secara nyata (bukan lagi gagasan) dalam bentuk program komputer (aplikasi). Analisis mendalam di bab 4 untuk menjawab pertanyaan penelitian secara jelas, detail dan logis. Bab 5 hanya menulis 1 atau 2 kalimat jawaban tersebut.
+[4/5 21.37] DP 2 Bapak Husni Husni: Bab 4 tidak boleh fokus untuk menjelaskan tampilan dan screen capture aplikasi. Apa yang dibahas adalah implementasi bab 3, terutama scenario pengujian dan analisis hasil pengujian tersebut.
+[4/5 21.46] DP 2 Bapak Husni Husni: bagi yang melaksanakan preprocessing TEKS.. . pastikan tidak salah menyebutkan "stemming" atau "Lematisasi". jangan mengatakan stemming tetapi hanya melakukan lematisasi. Baca buku NLP, IR dan Text Mining (bahasa inggris ya)
+[4/5 21.46] DP 2 Bapak Husni Husni: ini salah satunya:
+
+- Stemming: Apply stemming algorithms to reduce words to their root form (e.g., “running” becomes “run”). NLTK and spaCy offer stemmers for English and other languages.
+- Lemmatization: Use lemmatization to reduce words to their base or dictionary form (e.g., “better” becomes “good”). spaCy includes lemmatization capabilities.
+[4/5 21.47] DP 2 Bapak Husni Husni: banyak orang indonesia... bilangnya stemming padahal yang dikerjakan adalah lemmatization
+
+
+1.DATA KOREKSI EJAAN QUERY
+	- DATA QUERY BENAR DAN QUERY SALAH YANG DIBUAT SECARA MANUAL (100 DATA)
+	- DATA 100 DATA UJI, DISESUAIKAN DENGAN QUERY YANG TERDAPAT DALAM
+	  DATA ARTIKEL BERITA PARIWISATA UNTUK POS TAGGINGNYA
+	- DATA 100 DATA UJI DILAKUKAN PERHITUNGAN NILAI PRESISI DARI QUERY BENAR DAN QUERY SALAH
+	- HASIL DARI QUERY YANG DIINPUTKAN DIKOREKSI DAN MENAMPILKAN QUERY BENAR 
+	  SERTA MENAMPILKAN DATA ARTIKEL BERITA PARIWISATA SESUAI DENGAN QUERY BENAR
+
+
+2. DATA MENAMPILKAN ARTIKEL BERITA PARIWISATA PADA QUERY YANG DIINPUTKAN BENAR
+	- DATA ARTIKEL BERITA DILAKUKAN POS TAGGING
+	- DATA ARTIKEL DILAKUKAN INVERTED INDEX UNTUK MENGURUTKAN DOKUMEN YANG MEMPUNYAI  BOBOT  
+	- DATA ARTIKEL YANG MEMPUNYAI BOBOT DIPEROLEH DARI PROSES TF-IDF
+	- METODE COSINE SIMILARITY DIGUNAKAN UNTUK MENAMPILKAN ARTIKEL BERITA PARIWISATA
+	- DILAKUKAN PROSES EVALUASI SISTEM 
+
+
+3. EVALUASI SISTEM TERDAPAT DUA
+	- PADA PROSES SPELLING CORRECTION (KOREKSI EJAAN QUERY) 
+	- PADA PROSES INFORMATION RETRIEVAL (MENAMPILKAN ARTIKEL BERITA PARIWISATA)
+
+
+4. SKENARIO UJI COBA
+	- KOREKSI EJAAN MENGGUNAKAN LEVENSHTEIN DISTANCE DAN POS TAGGING
+	  ALURNYA YAITU A- : . PADA SPELLING CORRECTION UNTUK QUERY YANG DIINPUTKAN BENAR 
+			       DENGAN DI CEK MENGGUNAKAN LEVENSHTEIN DISTANCE, KEMUDIAN DILAKUKAN POS TAGGING
+			B- : . PADA INFORMATION RETRIEVAL UNTUK MENAMPILKAN BERITA PARIWISATA DIGUNAKAN
+		 	       POS TAGGING DAN DILAKUKAN PERHITUNGAN HASIL NILAI PRESISINYA DARI ADANYA 
+			       POS TAGGING
+
+
+        - KOREKSI EJAAN MENGGUNAKAN LEVENSHTEIN DISTANCE DAN TANPA POS TAGGING
+	  ALURNYA YAITU 
+			A- : . PADA SPELLING CORRECTION UNTUK QUERY YANG DIINPUTKAN BENAR 
+			       DENGAN DI CEK MENGGUNAKAN LEVENSHTEIN DISTANCE, TANPA ADANYA POS TAGGING
+			B- : . PADA INFORMATION RETRIEVAL UNTUK MENAMPILKAN BERITA PARIWISATA TANPA MENGGUNAKAN
+		 	       POS TAGGING DAN DILAKUKAN PERHITUNGAN HASIL NILAI PRESISINYA DARI ADANYA 
+			       POS TAGGING
+5. PROSES LEVENSHTEIN DISTANCE
+6. PROSES POS TAGGING
+7. PROSES INVERTED INDEX
+8. PROSES TF-IDF
+9. PROSES COSINE SIMILARITY
+10. PROSES EVALUASI SISTEM
+11. PROSES SKENARIO UJI COBA
+13. PROSES DATA DIPEROLEH
+14. PROSES KAMUS KOREKSI EJAANNYA
+15. KATA AMBIGU DALAM ARTIKEL
+16. DATA UJI 100
+17. DATA AWAL
+18. PROSES PREPROCESSING DALAM SPELLING CORRECTION DAN INFORMATION RETRIEVAL
+19. VALIDASI DATA
+20. NILAI PRESISI 
+21. JURNAL ACUAN DALAM JUDUL YANG DIGUNAKAN
+22. PENGARUH POS TAGGING DALAM PENELITIAN
+23. KAMUS YANG DILAKUKAN UNTUK POS TAGGING
+24. DATA DILAKUKAN PROSES WORDCLOUD
+25. PENULISAN PROPOSAL DAN LAPORAN
+26. DATA DI BACK UP DI DRIVE, DI LAPTOP, DI GITHUB
+27. PROSES PENERAPAN SISTEM DI GOOGLE COLAB, DAN VISUAL STUDIO CODE
+28. ARSITEKTUR SISTEM
+29. KAMUS KBBI
+30. PROGRAM STREAMLIT
+31. NAVBAR STREAMLIT
+32. TAMPILAN NAVBAR UNIK EDIT DI CANVA
+33. CEK TURNITIN
+34. KOREKSI SETIAP HARI
+35. SUKSES DAN LANCAR SIDANG SKRIPSI AISYATUR RADIAH TANPA REVISI, AAMIIN YA ALLAH
