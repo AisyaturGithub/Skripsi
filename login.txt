@@ -1,0 +1,9 @@
+import streamlit as st
+import pickle
+from pathlib import Path
+import streamlit_authenticator as stauth
+
+st.set_page_config(page_title=“app”, layout=“wide”)
+
+names = [“User1 name1”, “User2 name2”]
+usernames = [“uname1”, “uname2”]
