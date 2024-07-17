@@ -41,11 +41,11 @@ def levenshtein_distance(s1, s2):
 
 #Data yang tersimpan di database xampp, mysql
 mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
+    host="sql12.freesqldatabase.com",
+    user="sql12720399",
+    password="vBUImE7i1Q",
     # database="skripsi"
-    database="berita",
+    database="sql12720399",
 )
 
 #Fungsi untuk menghubungkan data yang ada di database 
